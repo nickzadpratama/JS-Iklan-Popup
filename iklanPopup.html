@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membuat space iklan</title>
+	<style>
+
+	body{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.iklan{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0,.6);
+	}
+	
+	#kotak{
+		margin: 10% auto;
+		width: 50%;
+		height: 50%;
+		-webkit-box-shadow: 0 0 15px #000;
+		-moz-box-shadow: 0 0 15px #000;
+		box-shadow: 0 0 15px #000;
+		opacity: 0.9;
+		background: rgb(2,0,36);
+		background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,60,60,1) 9%, rgba(1,65,156,1) 79%, rgba(0,212,255,1) 100%);
+	}
+	
+	.close{
+		height: 30px;
+		width: 30px;
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		text-align: center;
+		line-height: 30px;
+		color: red;
+		margin: -15px -15px 0 0;
+		float: right;
+		border: 2px solid black;
+		border-radius: 50%;
+		background-color: white;
+		z-index: 999999;
+	}
+
+	h1{
+			font-size: 80px;
+			font-family: arial;
+			color: white;
+			text-shadow: 0 2px 1px black;
+			position: absolute;
+			left: 50%;
+			top: 39%;
+			transform: translate(-50%,-50%);
+			font-family: tahoma;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="iklan">
+	<div id="kotak">
+		<a class="close" href="#">&#215;</a>
+		<h1>Contoh Iklan</h1>
+	</div>
+</div>
+
+<h2>Welcome To Website My</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<script>
+	$(document).ready(function(){
+    $('.close').click(function(){
+        $(".iklan").fadeOut();
+    });
+});
+</script>
+</body>
+</html>
